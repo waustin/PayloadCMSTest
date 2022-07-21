@@ -1,0 +1,21 @@
+import { Block } from "payload/dist/fields/config/types";
+
+const ButtonBlock:Block = {
+  slug:'button',
+  fields: [
+    {
+      'name': 'buttonText',
+      'type': 'text'
+    },
+    {
+      'name': 'link',
+      'type': 'text',
+    },
+    {
+      'name': 'openInNewTab',
+      'type': 'checkbox',
+      'defaultValue': false,
+    }
+  ]
+}
+export default ButtonBlock;
